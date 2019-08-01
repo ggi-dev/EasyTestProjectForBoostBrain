@@ -7,8 +7,6 @@ import java.util.List;
 
 public class DogManager {
 
-
-
     private final String GENDER_MALE = "самец";
     private final String GENDER_FEMALE = "самка";
 
@@ -50,7 +48,6 @@ public class DogManager {
         } catch (Exception e) {
             e.printStackTrace();
         }
-
         return result;
     }
 
@@ -162,11 +159,11 @@ public class DogManager {
         for (InvalidLine line: invalidLines) {
             result.append(line.getLine() + " " + line.getE().toString()).append("\n");
         }
-
         return result.toString();
     }
 
     static class InvalidLine {
+        
         private String line;
         private Exception e;
 
