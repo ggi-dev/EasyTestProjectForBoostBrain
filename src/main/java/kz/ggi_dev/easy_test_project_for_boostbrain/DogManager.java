@@ -163,7 +163,7 @@ public class DogManager {
     }
 
     static class InvalidLine {
-        
+
         private String line;
         private Exception e;
 
